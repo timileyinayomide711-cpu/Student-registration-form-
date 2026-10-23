@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FUNAAB Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>FEDERAL UNIVERSITY OF AGRICULTURE, ABEOKUTA</h1>
+        <h2> Student Portal</h2>
+        <p>Registration &amp; Account Activation</p>
+    </header>
+
+    <main>
+        <section class="registration-card">
+
+            <div class="form-heading">
+                <h2>Student Registration Form</h2>
+                <p>Complete the form below to register your student account.</p>
+            </div>
+
+            <form id="registrationForm">
+
+                < class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullName">
+                            Full Name (Surname First):
+                        </label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="e.g. SMITH ALAO CHUKWUMA"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matricNumber">
+                            matric Number:
+                        </label>
+                        <input
+                            type="text"
+                            id="matricNumber"
+                            name="matricNumber"
+                            placeholder="e.g. 20261234"
+                            required>
+                    </div>
+
+                    < class="form-group">
+                        <label for="email">
+                            Official Student Email Address:
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="username@student.funaab.edu.ng"
+                            required>
+                   
+                       
+                    
+
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="">-- Select Department --</option>
+                            <option value="ICT">ICT</option>
+                            <option value="IFT">IFT</option>
+                            <option value="INS">INS</option>
+                            <option value="CYB">CYB</option>
+                            <option value="CSC">CSC</option>
+                            <option value="DTS">DTS</option>
+                            <option value="SWE">SWE</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="programme">Programme:</label>
+                        <select id="programme" name="programme" required>
+                            <option value="">-- Select Programme --</option>
+                            <option>Full Time</option>
+                            <option>Weekdays</option>
+                            <option>Weekend</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Create Password:</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Minimum 8 characters"
+                            minlength="8"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Re-enter password"
+                            minlength="8"
+                            required>
+                    </div>
+
+                </div>
+
+                <label class="verification">
+                    <input type="checkbox" id="verifyDetails" required>
+                    <span>
+                        I verify that these entries match my official
+                        JAMB admission profile details.
+                    </span>
+                </label>
+
+                <p id="message" aria-live="polite"></p>
+
+                <button type="submit">Register Account</button>
+
+                <p class="note">
+                    FUNAAB Student Registration Portal
+                </p>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Quality Education | Knowledge for Development | FUNAAB</p>
+    </footer>
+
+</body>
+</html>
